@@ -19,6 +19,7 @@ calcular o IMC e fornecer a classificação de acordo com a tabela padrão de IM
 peso = float(input("Digite seu peso em kg (Ex: 70.5): "))
 altura = float(input("Digite sua altura em metros (Ex: 1.75): "))
 imc = peso / (altura ** 2)
+
 if imc < 18.5:
     classificacao = "Abaixo do peso"
 elif imc < 25:
@@ -27,4 +28,5 @@ elif imc < 30:
     classificacao = "Sobrepeso"
 else:
     classificacao = "Obeso"
+    
 print(f"Seu IMC é {imc:.2f}. Classificação: {classificacao}")
